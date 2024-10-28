@@ -1,0 +1,9 @@
+region          = "ap-southeast-2"
+ami_id          = "ami-0f71013b2c8bd2c29"
+instance_type   = "t2.micro"
+subnet_id       = "subnet-0d2de6f95594ccf0d"
+security_groups = ["sg-010b307fac053b98a"]
+key_name        = "K8s-local-cluster"
+public_key_path = "./publickey"
+instance_name   = "L1"
+user_data_file  = "./userdata"

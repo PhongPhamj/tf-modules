@@ -5,5 +5,5 @@ subnet_id       = "subnet-0d2de6f95594ccf0d"
 security_groups = ["sg-010b307fac053b98a"]
 key_name        = "K8s-local-cluster"
 public_key_path = "./publickey"
-instance_name   = "L1"
+instance_name   = "terraform-initiated"
 user_data_file  = "./userdata"

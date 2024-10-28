@@ -11,6 +11,11 @@ variable "ami_id" {
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
+
+  validation {
+    condition = can(regex("^t[23].(micro|small|medium)$", var.instance_type))
+    error_message = "Instance type must be general purpose and size must be medium or smaller"
+  }
 }
 
 variable "subnet_id" {
